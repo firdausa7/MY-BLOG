@@ -14,6 +14,7 @@ login_manager.login_view = 'auth.login'
 mail = Mail()
 simple = SimpleMDE()
 
+
 def create_app(config_name):
 
     app = Flask(__name__)
@@ -27,7 +28,7 @@ def create_app(config_name):
     app.register_blueprint(main_blueprint)
 
     from .auth import auth as auth_blueprint
-    app.register_blueprint(auth_blueprint,url_prefix='/authenticate')
+    app.register_blueprint(auth_blueprint, url_prefix='/authenticate')
 
     mail.init_app(app)
     simple.init_app(app)
