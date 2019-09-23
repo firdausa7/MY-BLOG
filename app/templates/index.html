@@ -13,7 +13,7 @@
                 <h1 style="text-align: center;">Welcome to MYBLOG!!!</h1>
                 <h2 style="text-align: center;">Read blogs and create your own if desired</h2>
 
-                <hr style="border-width: 5px ;border-color: peru;">
+                <hr style="border-width: 5px ;border-color: lightseagreen;">
                 <ul class="blogsColumn" style="margin-left:20px;">
                 {% if blogs%}
                     {% for blog in blogs %}
@@ -22,7 +22,7 @@
                         <h3>{{blog.subtitle}}</h3>
                         <h4>Created by <strong>{{ blog.user.username }}</strong> on {{blog.posted_on}}</h4>
                     </li>
-                    <hr  style="border-width:2px; size:20px; border-color:rosybrown; width: 40%; margin-left:0%">
+                    <hr  style="border-width:2px; size:20px; border-color:lightseagreen; width: 40%; margin-left:0%">
                     {% endfor %}
                 {% endif%}
                 </ul>
@@ -32,8 +32,7 @@
                 <div class="panel panel-default subscription">
                     <div>{{ wtf.quick_form(subscribe_form) }}</div>
                 </div>
-                <div class="panel quote">
-                        <hr style="border-width:2px;">
+                <div class="quote">
                         <p>"{{new_quote.quoteMsg}}"</p>
                         <p>-by <strong>"{{new_quote.author}}"</strong></p>
                         <br>
