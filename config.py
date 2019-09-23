@@ -4,7 +4,7 @@ class Config:
     General configuration parent class
     '''
     QUOTE_API_URL="http://quotes.stormconsultancy.co.uk/random.json"
-    SECRET_KEY=os.environ.get('SECRET_KEY')
+    SECRET_KEY='6bv-GaB0A5GhQWKXtc43Gg'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://firdausa:12345@localhost/blog'
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
