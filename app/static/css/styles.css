@@ -1,0 +1,91 @@
+#cov{
+    background-image: url("../images/b.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.firdausa{
+    background-image: url("../images/blog3.jpeg");
+    margin-top:200px;
+    margin-right:600px;
+    color:white;
+    font-family: 'Limelight', cursive;
+    font-size: 100px;
+    font-style: italic;
+    background-size: cover;
+    padding:10px;
+    width:100%;
+    height:600px;
+    text-align: center;
+}
+
+.navbar, .navbar-brand{
+  font-size: 18px;
+  background-color: #DDC0A6;
+}
+/* .nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: #DDC0A6;
+    width:100%;
+  }*/
+.navbar li a {
+    font-size: 25px;
+    display: block; 
+    
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.nav li a:hover {
+    background-color: #CE796B;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+
+h1{
+  font-family: 'Monoton', cursive;
+  font-size:40px;
+}
+h2{
+  font-family: 'Luckiest Guy', cursive;
+  font-size:30px;
+  color:#554B42;
+}
+h3,p{
+  font-family: 'Merienda', cursive;
+}
+h4{
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+p{
+  font-size: 30 px;
+}
+.container-fluid{
+    background-color: #FFF2D4;
+}
+.quote{
+    color:peru;
+    /* padding:20px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    background-color: transparent;  
+    font-size: 30px;
+    
+    /* margin-right:600px; */
+    font-family: 'Courgette', cursive;
+    margin-top: 200px;
+}
+.login, .registration, .blogform,.subscription{
+    background-color:#DDC0A6;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+
+}
+.blogsColumn{
+  list-style-type: none;
+  padding: 20px;
+}
