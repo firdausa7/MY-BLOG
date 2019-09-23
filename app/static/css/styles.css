@@ -8,16 +8,23 @@
 
 .navbar,
 .navbar-brand {
-    font-size: 18px;
+    font-size: 28px;
     background-color: white;
+    font-family: 'Courgette', cursive;
+    color: lightseagreen;
+
+
+
 }
 
 .navbar li a {
-    font-size: 25px;
+    font-size: 28px;
     display: block;
-
+    color: lightseagreen;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Courgette', cursive;
+
 }
 
 .nav li a:hover {
@@ -52,7 +59,7 @@ p {
     font-size: 30 px;
 }
 
-.quote {
+#quote {
     color:whitesmoke;
     font-family: 'Courgette', cursive;
     background-color: transparent;
