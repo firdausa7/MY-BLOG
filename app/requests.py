@@ -14,7 +14,7 @@ def get_quotes():
     quoteUrl= "http://quotes.stormconsultancy.co.uk/random.json"
     with urllib.request.urlopen(quoteUrl) as url:
         get_quotes_data = url.read()
-        quotes_response = json.loads(get_quotes_data)    
+        quotes_response = json.loads(get_quotes_data)
 
         quote = None
         if quotes_response:

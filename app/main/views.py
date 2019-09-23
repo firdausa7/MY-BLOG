@@ -4,8 +4,8 @@ from app import db
 from ..requests import get_quotes
 from flask_login import login_required, current_user
 from .forms import CreateBlog, AddComment, EditBlog, SubscribeForm
-from ..models import User, Blog, Comment
-@main.route('/')
+from ..models import User, Blog, Comment,Subscription
+@main.route('/', methods=['GET', 'POST'])
 def index():
     new_quote = get_quotes()
     blogs = Blog.query.all()
@@ -16,7 +16,6 @@ def index():
         subscription = Subscription(email=email)
         db.session.add(subscription)
         db.session.commit()
-        flash("Thanks! You will now receive emails for new blogs added")
         return render_template('index.html', new_quote=new_quote, blogs=blogs, users=users, subscribe_form=form)
     return render_template('index.html', new_quote=new_quote, blogs=blogs, users=users, subscribe_form=form)
 
