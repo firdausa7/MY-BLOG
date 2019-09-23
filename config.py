@@ -8,11 +8,15 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://firdausa:12345@localhost/blog'
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
-    MAIL_SERVER = 'smtp.googlemail.com'
-    MAIL_PORT = 587
-    MAIL_USE_TLS = True
+     #  email configurations
+    MAIL_SERVER = 'smtp.gmail.com'
+    MAIL_PORT = 465
+    MAIL_USE_TLS = False
+    MAIL_USE_SSL = True
+
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
+    
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
 class ProdConfig(Config):

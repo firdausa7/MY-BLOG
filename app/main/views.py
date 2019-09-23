@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, url_for, flash
 from . import main
 from app import db
-from ..request import get_quotes
+from ..requests import get_quotes
 from flask_login import login_required, current_user
 from .forms import CreateBlog, AddComment, EditBlog, SubscribeForm
 from ..models import User, Blog, Comment
@@ -16,7 +16,7 @@ def index():
         subscription = Subscription(email=email)
         db.session.add(subscription)
         db.session.commit()
-        # flash("Thanks! You will now receive emails for new blogs added")
+        flash("Thanks! You will now receive emails for new blogs added")
         return render_template('index.html', new_quote=new_quote, blogs=blogs, users=users, subscribe_form=form)
     return render_template('index.html', new_quote=new_quote, blogs=blogs, users=users, subscribe_form=form)
 
@@ -42,8 +42,6 @@ def add_blog():
     blogform = CreateBlog()
 
     if blogform.validate_on_submit():
-        # user= User.query.filter_by(username=current_user.username).first()
-        # userid=user.id
 
         title = blogform.title.data
         subtitle = blogform.subtitle.data
@@ -52,7 +50,6 @@ def add_blog():
                         body=body, user_id=current_user.id)
         db.session.add(new_blog)
         db.session.commit()
-        # message="Your blog has been added successfully!!"
         return redirect(url_for('main.index'))
     return render_template('create_blog.html', blog_form=blogform)
 
@@ -60,8 +57,6 @@ def add_blog():
 @main.route('/profile/<uname>')
 def profile(uname):
     user = User.query.filter_by(username=uname).first()
-    # if user is None:
-    #     abort(404)
     blogs = Blog.query.filter_by(user_id=user.id).all()
     return render_template("profile/profile.html", user=user, blogs=blogs)
 
