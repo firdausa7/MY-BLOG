@@ -2,7 +2,7 @@
 #### A blogging website where you can view blogs from different people and comment on them. You can also contribute by adding your own blog init, 23/09/2019.
 #### By **FIRDAUSA SALAT**
 ## Screenshot
-<img src="/home/firdausa/Documents/MY-BLOG/app/static/images/ggg.png" height="200" width= "900"> 
+<img src="https://github.com/firdausa7/MY-BLOG/blob/master/app/static/images/ggg.png?raw=true" width="1000">
 ## Description
 This application is developed for users to read blogs on different topics. User can also comment on the blogs. But for that, user has to register himself. If not registered, user can only see the blogs from other users but if registered, user can add a blog of his own interest or he can delete the unwanted comments on his post. The application also displays a new quote everytime user opens it.
 
