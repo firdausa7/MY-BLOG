@@ -41,20 +41,7 @@ This application is developed for users to read blogs on different topics. User 
     1. Run chmod a+x start.sh
     2. Run ./start.sh
     3. Access the application through `localhost:5000`
-### Development
-Want to contribute? Great!
 
-To fix a bug or enhance an existing module, follow these steps:
-
-- Fork the repo
-- Create a new branch (`git checkout -b improve-feature`)
-- Make the appropriate changes in the files
-- Add changes to reflect the changes made
-- Commit your changes (`git commit -am 'Improve feature'`)
-- Push to the branch (`git push origin improve-feature`)
-- Create a Pull Request
-
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/AnumAsif/my-blogs/issues/new). Please include sample queries and their corresponding results.
 ## Technologies Used
 - This project was generated with [Python3.6](https://devdocs.io/python~3.6/) and using [Flask](http://flask.pocoo.org/) framework
 ## Support and contact details
