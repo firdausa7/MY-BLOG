@@ -1,31 +1,20 @@
 # MY-BLOG
-#### A blogging website where you can view blogs from different people and comment on them. You can also contribute by adding your own blog init, 23/09/2019.
+#### A blogging website where you can view blogs from different people and comment on them. 
+
 #### By **FIRDAUSA SALAT**
 ## Screenshot
 <img src="https://github.com/firdausa7/MY-BLOG/blob/master/app/static/images/ggg.png?raw=true" width="1000">
+
 ## Description
 This application is developed for users to read blogs on different topics. User can also comment on the blogs. But for that, user has to register himself. If not registered, user can only see the blogs from other users but if registered, user can add a blog of his own interest or he can delete the unwanted comments on his post. The application also displays a new quote everytime user opens it.
 
-## Specifications
-### Application:
-1. displays a list of blogs for the user to select from
-   - INPUT:"Website opened"
-   - OUTPUT:"An area displaying all the existing blogs"
-2. displays a blog with it's comments on a new page when a link to a particular blog is selected
-   - INPUT:"blog title clicked"
-   - OUTPUT:"A page displaying a blog with all the comments on it"
-3. adds a new blog
-   - INPUT:"Add new blog button pressed"
-   - OUTPUT:"New blog added with title and details"
-4. registers user to the website
-   - INPUT:"A form containing required info of user is submitted"
-   - OUTPUT:"User is registered with a specific email and password"
-5. login user to the website
-   - INPUT:"User enter password and email address"
-   - OUTPUT:"User logged in to the system" 
-6. adds a new comment to the selected blog 
-   - INPUT:"Comment button pressed"
-   - OUTPUT:"A new comment appear on the blog comments list"
+# User Story
+* A users can see blog posted
+* A user can comment on different blogs and leave feedback
+* A user can delete a comment
+* A user can sign up and sign in and logout
+* A user can view profile of different users
+
 
 ## Setup/Installation Requirements
 - Python 3.6
